@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="hasSidebar hasPageActions hasBreadcrumb conceptual has-default-focus theme-light" lang="en-us" dir="ltr" data-css-variable-support="true" data-authenticated="false" data-auth-status-determined="false" data-target="docs" x-ms-format-detection="none">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta property="og:title" content="Configuration of advanced features - Power Virtual Agents" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://learn.microsoft.com/en-us/power-virtual-agents/configuration-fundamentals" />
+			<meta property="og:description" content="Incorporate advanced features into your bot, such as sign-in, live agent transfer, and custom appearances." />
+
+	<meta property="og:image" content="https://learn.microsoft.com/en-us/media/logos/logo-ms-social.png" />
+
+	<meta property="og:image:alt" content="Microsoft Logo" />
+
+	<meta name="twitter:card" content="summary" />
+
+	<meta name="twitter:site" content="@docsmsft" />
+
+	<meta name="color-scheme" content="light dark">
+
+
+	<meta name="author" content="iaanw" />
+<meta name="breadcrumb_path" content="/power-virtual-agents/breadcrumb/toc.json" />
+<meta name="depot_name" content="MSDN.power-virtual-agent" />
+<meta name="description" content="Incorporate advanced features into your bot, such as sign-in, live agent transfer, and custom appearances." />
+<meta name="document_id" content="43ad579e-a36d-2798-d94d-9a5e61a017c3" />
+<meta name="document_version_independent_id" content="13a629a6-ac9d-37b7-f04a-598ba5905b50" />
+<meta name="gitcommit" content="https://github.com/MicrosoftDocs/power-platform-pr/blob/d3e650a94fcb8dbc555752aec1d9f8c26d647cc9/power-virtual-agents/configuration-fundamentals.md" />
+<meta name="keywords" content="PVA" />
+<meta name="locale" content="en-us" />
+<meta name="manager" content="shellyha" />
+<meta name="ms.author" content="iawilt" />
+<meta name="ms.collection" content="virtual-agent" />
+<meta name="ms.custom" content="configuration, fundamentals, ceX" />
+<meta name="ms.date" content="12/29/2020" />
+<meta name="ms.service" content="power-virtual-agents" />
+<meta name="ms.topic" content="article" />
+<meta name="original_content_git_url" content="https://github.com/MicrosoftDocs/power-platform-pr/blob/live/power-virtual-agents/configuration-fundamentals.md" />
+<meta name="page_type" content="conceptual" />
+<meta name="pdf_url_template" content="https://learn.microsoft.com/pdfstore/en-us/MSDN.power-virtual-agent/{branchName}{pdfName}" />
+<meta name="recommendations" content="true" />
+<meta name="schema" content="Conceptual" />
+<meta name="search.app" content="capaedac-pva" />
+<meta name="search.appverid" content="met150" />
+<meta name="search.audienceType" content="maker" />
+<meta name="site_name" content="Docs" />
+<meta name="toc_rel" content="toc.json" />
+<meta name="uhfHeaderId" content="MSDocsHeader-PowerPlatform" />
+<meta name="updated_at" content="2023-01-11 01:01 AM" />
+<meta name="word_count" content="240" />
+
+
+	<meta name="persistent_id" content="44622eb0-0100-6ecb-7682-eb7e62dd22bd" />
+	
+
+
+	<meta name="cmProducts" content="https://authoring-docs-microsoft.poolparty.biz/devrel/ee7e80c3-903f-4811-ab67-762f2afec59d" data-source="generated" />
+
+	
+
+	<meta name="scope" content="Power Virtual Agents" />
+	<meta name="github_feedback_content_git_url" content="https://github.com/MicrosoftDocs/power-platform/blob/main/power-virtual-agents/configuration-fundamentals.md" />
+<link href="https://learn.microsoft.com/en-us/power-virtual-agents/configuration-fundamentals" rel="canonical">
+	<title>Configuration of advanced features - Power Virtual Agents | Microsoft Learn</title>
+
+		<link rel="stylesheet" href="/_themes/docs.theme/master/en-us/_themes/styles/fe1c95bc.site-ltr.css ">
+
+	
+
+	<script id="msdocs-script">
+	var msDocs = {
+		data: {
+			timeOrigin: Date.now(),
+			contentLocale: 'en-us',
+			contentDir: 'ltr',
+			userLocale: 'en-us',
+			userDir: 'ltr',
+			pageTemplate: 'Conceptual',
+			brand: '',
+			context: {
+			},
+			hasBinaryRating: true,
+			hasGithubIssues: true,
+			standardFeedback: false,
+			showFeedbackReport: false,
+			enableTutorialFeedback: false,
+			feedbackSystem: 'GitHub',
+			feedbackGitHubRepo: 'MicrosoftDocs/power-platform',
+			feedbackProductUrl: 'https://powerusers.microsoft.com/t5/Power-Apps-Ideas/idb-p/PowerAppsIdeas/label-name/power%20virtual%20agents',
+			extendBreadcrumb: false,
+			isEditDisplayable: true,
+			hideViewSource: false,
+			hasPageActions: true,
+			hasPrintButton: true,
+			hasBookmark: true,
+			hasShare: true,
+			isPermissioned: false,
+			hasRecommendations: true,
+			contributors: [
+						{ name: "iaanw", url: "https://github.com/iaanw" },
+						{ name: "JonathanFingold", url: "https://github.com/JonathanFingold" },
+						{ name: "v-alarioza", url: "https://github.com/v-alarioza" },
+						{ name: "shellyhaverkamp", url: "https://github.com/shellyhaverkamp" },
+						{ name: "pawant-ms", url: "https://github.com/pawant-ms" }
+],
+		},
+		functions:{}
+	};
+	</script>
+	<script src="https://wcpstatic.microsoft.com/mscc/lib/v2/wcp-consent.js"></script>
+	<script src="https://js.monitor.azure.com/scripts/c/ms.jsll-3.min.js"></script>
+
+	<script src="/_themes/docs.theme/master/en-us/_themes/global/67a45209.deprecation.js"></script>
+		<script src="/_themes/docs.theme/master/en-us/_themes/scripts/43f256ca.index-docs.js"></script>
+</head>
+
+<body lang="en-us" dir="ltr">
+	<div class="header-holder has-default-focus">
+		<a href="#main" class="skip-to-main-link has-outline-color-text visually-hidden-until-focused position-fixed has-inner-focus focus-visible top-0 left-0 right-0 padding-xs has-text-centered has-body-background" tabindex="1">Skip to main content</a>
+
+		<div hidden id="cookie-consent-holder"></div>
+
+		<div id="unsupported-browser" style="
+			background-color: white;
+			color: black;
+			padding: 16px;
+			border-bottom: 1px solid grey;"
+			hidden
+		>
+			<div style="max-width: 800px; margin: 0 auto;">
+				<p style="font-size: 24px">This browser is no longer supported.</p>
+				<p style="font-size: 16px; margin-top: 16px;">Upgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.</p>
+				<div style="margin-top: 12px;">
+					<a href="https://go.microsoft.com/fwlink/p/?LinkID=2092881 "
+						style="
+						background-color: #0078d4;
+						border: 1px solid #0078d4;
+						color: white;
+						padding: 6px 12px;
+						border-radius: 2px;
+						display: inline-block;
+						">
+Download Microsoft Edge					</a>
+					<a href="https://learn.microsoft.com/en-us/lifecycle/faq/internet-explorer-microsoft-edge"
+						style="
+							background-color: white;
+							padding: 6px 12px;
+							border: 1px solid #505050;
+							color: #171717;
+							border-radius: 2px;
+							display: inline-block;
+							">
+More info about Internet Explorer and Microsoft Edge					</a>
+				</div>
+			</div>
+
+		</div>
+		<!-- liquid-tag banners global -->
+		<div id="headerAreaHolder" data-bi-name="header">
+<header role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization">
+	<div class="nav-bar">
+		<div class="nav-bar-brand">
+			<a itemprop="url" href="https://www.microsoft.com" aria-label="Microsoft" class="nav-bar-button">
+				<div class="nav-bar-logo has-background-image theme-display is-light" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+				<div class="nav-bar-logo has-background-image theme-display is-dark is-high-contrast" role="presentation" aria-hidden="true" itemprop="logo" itemscope="itemscope"></div>
+			</a>
+		</div>
+	</div>
+	<div class="nav-bar border-top is-hidden-mobile"></div>
+</header>		</div>
+
+
+			<div id="content-header" class="content-header uhf-container has-padding has-default-focus border-bottom-none" data-bi-name="content-header">
+				<div class="content-header-controls margin-xxs margin-inline-sm-tablet">
+					<button type="button" class="contents-button button button-sm margin-right-xxs" data-bi-name="contents-expand" aria-haspopup="true" data-contents-button>
+						<span class="icon"><span class="docon docon-menu" aria-hidden="true"></span></span>
+						<span class="contents-expand-title">
+Table of contents						</span>
+					</button>
+					<button type="button" class="ap-collapse-behavior ap-expanded button button-sm" data-bi-name="ap-collapse" aria-controls="action-panel">
+						<span class="icon"><span class="docon docon-exit-mode" aria-hidden="true"></span></span>
+						<span>Exit focus mode</span>
+					</button>
+				</div>
+			</div>
+
+		<div id="disclaimer-holder" class="has-overflow-hidden has-default-focus">
+			<!-- liquid-tag banners sectional -->
+		</div>
+	</div>
+
+	<div class="mainContainer  uhf-container has-default-focus" data-bi-name="body">
+
+		<div class="columns has-large-gaps is-gapless-mobile ">
+
+			<div id="left-container" class="left-container is-hidden-mobile column is-one-third-tablet is-one-quarter-desktop">
+				<nav id="affixed-left-container" class="margin-top-sm-tablet position-fixed display-flex flex-direction-column" role="navigation" aria-label="Primary"></nav>
+			</div>
+
+			<!-- .primary-holder -->
+			<section class="primary-holder column is-two-thirds-tablet is-three-quarters-desktop">
+				<!--div.columns -->
+				<div class="columns is-gapless-mobile has-large-gaps ">
+
+
+					<div id="main-column" class="column  is-full is-8-desktop">
+
+						<main id="main" role="main" data-bi-name="content" lang="en-us" dir="ltr">
+							<!-- article-header -->
+							<div id="article-header" class="background-color-body margin-top-sm-tablet margin-bottom-xs display-none-print">
+								<div class="display-flex align-items-center ">
+									<details id="article-header-breadcrumbs-overflow-popover" class="popover" data-for="article-header-breadcrumbs">
+										<summary class="button button-clear button-primary button-sm" aria-label="All breadcrumbs">
+											<span class="icon">
+												<span class="docon docon-more"></span>
+											</span>
+										</summary>
+										<div id="article-header-breadcrumbs-overflow" class="popover-content padding-none">
+
+										</div>
+									</details>
+									<bread-crumbs id="article-header-breadcrumbs" class="overflow-hidden flex-grow-1 margin-right-sm margin-right-md-tablet margin-right-lg-desktop" id="page-breadcrumbs"></bread-crumbs>
+
+									<div id="article-header-page-actions"  class="opacity-none margin-left-auto display-flex flex-wrap-no-wrap align-items-stretch">
+
+										<a
+											id="lang-link-tablet"
+											class="button button-primary button-clear button-sm display-none display-inline-flex-tablet"
+											title="Read in English" data-bi-name="language-toggle"
+											data-read-in-link
+											hidden>
+											<span class="icon margin-none" aria-hidden="true" data-read-in-link-icon>
+												<span class="docon docon-locale-globe"></span>
+											</span>
+											<span class="is-visually-hidden" data-read-in-link-text>Read in English</span>
+										</a>
+
+											<button
+												type="button"
+												class="collection button button-clear button-sm button-primary display-none display-inline-flex-tablet"
+												data-list-type="collection"
+												data-bi-name="collection"
+												title="Add to collection">
+												<span class="icon margin-none" aria-hidden="true">
+													<span class="docon docon-circle-addition"></span>
+												</span>
+												<span class="collection-status is-visually-hidden">Save</span>
+											</button>
+										
+
+											<a	data-contenteditbtn
+												class="button button-clear button-sm text-decoration-none button-primary display-none display-inline-flex-tablet"
+												aria-label="Edit"
+												title="Edit This Document"
+												data-bi-name="edit"
+
+														href="https://github.com/MicrosoftDocs/power-platform/blob/main/power-virtual-agents/configuration-fundamentals.md"
+														data-original_content_git_url="https://github.com/MicrosoftDocs/power-platform-pr/blob/live/power-virtual-agents/configuration-fundamentals.md"
+														data-original_content_git_url_template="{repo}/blob/{branch}/power-virtual-agents/configuration-fundamentals.md"
+														data-pr_repo=""
+														data-pr_branch=""
+											>
+												<span class="icon margin-none" aria-hidden="true">
+													<span class="docon docon-edit-outline"></span>
+												</span>
+											</a>
+										
+
+
+										
+										<details class="popover popover-right" id="article-header-page-actions-overflow">
+											<summary class="justify-content-flex-start button button-clear button-sm button-primary" aria-label="More actions">
+												<span class="icon" aria-hidden="true">
+													<span class="docon docon-more-vertical"></span>
+												</span>
+											</summary>
+											<div class="popover-content padding-none">
+													<button
+														data-page-action-item="overflow-mobile"
+														type="button"
+														class="justify-content-flex-start button-block button-sm has-inner-focus button button-clear display-none-tablet"
+														data-bi-name="contents-expand"
+														data-contents-button
+														data-popover-close>
+														<span class="icon">
+															<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+														</span>
+															<span class="contents-expand-title">Table of contents</span>
+													</button>
+
+												<a
+													id="lang-link-overflow"
+													class="justify-content-flex-start button-sm has-inner-focus button button-clear button-block display-none-tablet"
+													title="Read in English" data-bi-name="language-toggle"
+													data-page-action-item="overflow-mobile"
+													data-check-hidden="true"
+													data-read-in-link
+													hidden
+													>
+													<span class="icon" aria-hidden="true" data-read-in-link-icon>
+														<span class="docon docon-locale-globe"></span>
+													</span>
+													<span data-read-in-link-text>Read in English</span>
+												</a>
+
+													<button
+														type="button"
+														class="collection justify-content-flex-start button button-clear button-sm has-inner-focus button-block display-none-tablet"
+														data-list-type="collection"
+														data-bi-name="collection"
+														title="Add to collection"
+														data-page-action-item="overflow-mobile"
+														data-check-hidden="true"
+														data-popover-close>
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-circle-addition"></span>
+														</span>
+														<span class="collection-status">Save</span>
+													</button>
+
+													<a	data-contenteditbtn
+														class="button button-clear button-block button-sm has-inner-focus justify-content-flex-start text-decoration-none display-none-tablet"
+														aria-label="Edit"
+														title="Edit This Document"
+														data-bi-name="edit"
+
+																href="https://github.com/MicrosoftDocs/power-platform/blob/main/power-virtual-agents/configuration-fundamentals.md"
+																data-original_content_git_url="https://github.com/MicrosoftDocs/power-platform-pr/blob/live/power-virtual-agents/configuration-fundamentals.md"
+																data-original_content_git_url_template="{repo}/blob/{branch}/power-virtual-agents/configuration-fundamentals.md"
+																data-pr_repo=""
+																data-pr_branch=""
+													>
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-edit-outline"></span>
+														</span>
+														<span>Edit</span>
+													</a>
+
+													<button
+														class="button button-block button-clear button-sm justify-content-flex-start has-inner-focus"
+														title="Print"
+														type="button"
+														aria-label="Print"
+														data-bi-name="print"
+														data-page-action-item="overflow-all"
+														data-popover-close
+														data-print-page
+														data-check-hidden="true">
+														<span class="icon" aria-hidden="true">
+															<span class="docon docon-print"></span>
+														</span>
+														<span>Print</span>
+													</button>
+
+													<div aria-hidden="true" class="margin-none
+														border-top" data-page-action-item="overflow-all"></div>
+
+													
+														<a class="button button-clear button-sm has-inner-focus button-block text-decoration-none justify-content-flex-start share-twitter" data-bi-name="twitter" data-page-action-item="overflow-all">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-twitter"></span>
+															</span>
+															<span>Twitter</span>
+														</a>
+														<a class="button button-clear button-sm has-inner-focus button-block text-decoration-none justify-content-flex-start share-linkedin" data-bi-name="linkedin" data-page-action-item="overflow-all">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-linkedin"></span>
+															</span>
+															<span>LinkedIn</span>
+														</a>
+														<a class="button button-clear button-sm button-block has-inner-focus text-decoration-none justify-content-flex-start share-facebook" data-bi-name="facebook" data-page-action-item="overflow-all">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-brand-facebook"></span>
+															</span>
+															<span>Facebook</span>
+														</a>
+														<a class="button button-clear button-sm button-block has-inner-focus text-decoration-none justify-content-flex-start share-email" data-bi-name="email" data-page-action-item="overflow-all">
+															<span class="icon" aria-hidden="true">
+																<span class="docon docon-mail-message-fill"></span>
+															</span>
+															<span>Email</span>
+														</a>
+												
+											</div>
+										</details>
+										
+									</div>
+								</div>
+							</div>
+							<!-- end article-header -->
+
+
+							<div>
+								<button type="button" class="border contents-button button button-clear button-sm is-hidden-tablet has-inner-focus" data-bi-name="contents-expand" data-contents-button hidden>
+									<span class="icon">
+										<span class="docon docon-editor-list-bullet" aria-hidden="true"></span>
+									</span>
+										<span class="contents-expand-title">Table of contents</span>
+								</button>
+							</div>
+
+							<!-- end mobile-contents button  -->
+
+							<div class="content ">
+
+
+								<h1 id="key-concepts---configuration-of-power-virtual-agents">Key concepts - Configuration of Power Virtual Agents</h1>
+
+
+									<div class="display-flex justify-content-space-between align-items-center flex-wrap-wrap page-metadata-container">
+										<div class="margin-right-xxs">
+											<ul class="metadata page-metadata" data-bi-name="page info" lang="en-us" dir="ltr">
+													<li>
+Article													</li>
+													<li class="visibility-hidden-visual-diff">
+														<time class="is-invisible" data-article-date aria-label="Article review date" datetime="2023-01-11T01:01:00Z" data-article-date-source="git">01/11/2023</time>
+													</li>
+															<li class="readingTime">2 minutes to read</li>
+														<li class="contributors-holder display-none-print">
+															<button aria-label="View all contributors" class="contributors-button link-button" data-bi-name="contributors" title="View all contributors">
+																	5 contributors
+															</button>
+														</li>
+											</ul>
+										</div>
+
+<div id="user-feedback" class="margin-block-xxs display-none-print" data-hide-on-archived>
+	<button
+		id="user-feedback-button"
+		data-test-id="conceptual-feedback-button"
+		class="button button-sm button-clear button-primary"
+		type="button"
+		data-bi-name="user-feedback-button"
+		data-user-feedback-button
+	>
+		<span class="icon" aria-hidden="true">
+			<span class="docon docon-like"></span>
+		</span>
+		<span>Feedback</span>
+	</button>
+</div>
+									</div>
+
+										<nav id="center-doc-outline" class="doc-outline is-hidden-desktop display-none-print margin-bottom-sm" data-bi-name="intopic toc" role="navigation" aria-label="In this article">
+											<h2 id="ms--in-this-article" class="title is-6 margin-block-xs">In this article</h2>
+										</nav>
+
+								<!-- <content> -->
+									<p>Select the version of Power Virtual Agents you're using here:</p>
+<div class="op_single_selector">
+<ul>
+<li><a href="configuration-fundamentals" data-linktype="relative-path">Power Virtual Agents web app</a></li>
+<li><a href="teams/configuration-fundamentals-teams" data-linktype="relative-path">Power Virtual Agents app in Microsoft Teams</a></li>
+</ul>
+</div>
+<p>Power Virtual Agents has many advanced features that let you extend the capabilities of what bot conversations can do.</p>
+<p>These features allow you to personalize the look and feel of your bot and give you more flexibility in what your users can ask your bot to do.</p>
+<p>You can sign-in to backend systems, seamlessly integrate between virtual support conversations, and customize the look and feel of your bot.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ul>
+<li><a href="fundamentals-what-is-power-virtual-agents" data-linktype="relative-path">Learn more about what you can do with Power Virtual Agents</a>.</li>
+</ul>
+<h2 id="in-this-section">In this section</h2>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="configuration-end-user-authentication" data-linktype="relative-path">Assign access and change security options</a></td>
+<td>Determine who can use the bot in Microsoft Teams</td>
+</tr>
+<tr>
+<td><a href="configuration-end-user-authentication" data-linktype="relative-path">Configure end-user authentication</a></td>
+<td>Allow users to sign in with any OAuth2 identity provider directly in a bot conversation.</td>
+</tr>
+<tr>
+<td><a href="configure-sso" data-linktype="relative-path">Configure single sign-on</a></td>
+<td>Retain a user's authentication to use other signed-in products.</td>
+</tr>
+<tr>
+<td><a href="configure-generic-handoff" data-linktype="relative-path">Configure hand off to a generic engagement hub</a></td>
+<td>Hand off conversations to any engagement hub.</td>
+</tr>
+<tr>
+<td><a href="configuration-hand-off-omnichannel" data-linktype="relative-path">Configure hand off to Omnichannel for Customer Service</a></td>
+<td>Seamlessly and contextually hand off bot conversations to live (human) agents using Omnichannel for Customer Service.</td>
+</tr>
+<tr>
+<td><a href="configure-bot-greeting" data-linktype="relative-path">Configure your bot to automatically start the conversation</a></td>
+<td>Make your bot start the conversation automatically whenever the bot is loaded.</td>
+</tr>
+<tr>
+<td><a href="customize-default-canvas" data-linktype="relative-path">Customize the look and feel of your bot</a></td>
+<td>Send and receive dynamic responses (such as adaptive cards and carousels) that you can custom render directly in the bot conversation.</td>
+</tr>
+</tbody>
+</table>
+
+							</div>
+
+							<div id="assertive-live-region" role="alert" aria-live="assertive" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<div id="polite-live-region" role="status" aria-live="polite" class="visually-hidden" aria-relevant="additions" aria-atomic="true"></div>
+							<!-- </content> -->
+
+						</main>
+
+
+
+
+						<!-- recommendations section -->
+							<section id="recommendations-section" data-bi-name="recommendations" class="display-none-print"></section>
+						<!-- end recommendations section -->
+
+						<!-- feedback section -->
+<section class="feedback-section position-relative" data-bi-name="feedback-section">
+    <h2 id="feedback" class="title is-3 margin-top-sm">Feedback</h2>
+
+    <div class="alert choose-feedback-type padding-bottom-sm">
+        <p id="send-feedback-about">Submit and view feedback for</p>
+
+        <div class="choose-feedback-buttons buttons margin-top-xs">
+                <a class="button has-external-link-indicator feedback-type-product" aria-label="Send feedback about this product" href="https://powerusers.microsoft.com/t5/Power-Apps-Ideas/idb-p/PowerAppsIdeas/label-name/power%20virtual%20agents" data-bi-name="product-feedback">
+                    <span>This product</span>
+                </a>
+			<a class="button feedback-type-product github-link" aria-label="Send feedback about this page" data-bi-name="create-issue-on-github">
+				<span aria-hidden="true" class="docon docon-brand-github padding-right-xxs"></span>
+				<span>This page</span>
+			</a>
+        </div>
+    </div>
+
+    <div class="action-container display-flex justify-content-flex-end margin-block-xxs">
+        <a class="view-on-github has-external-link-indicator" data-bi-name="view-on-github" href="https://github.com/MicrosoftDocs/power-platform/issues">
+            <span aria-hidden="true" class="docon docon-brand-github"></span>
+            <span>View all page feedback</span>
+        </a>
+    </div>
+</section>
+						<!-- end feedback section -->
+
+						<!-- feedback report section -->
+						<!-- end feedback report section -->
+
+							<div
+								id="ms--additional-resources-mobile"
+								role="complementary"
+								aria-label="Additional resources"
+								class="display-none-desktop"
+							>
+								<hr class="hr" hidden />
+								<h2 id="ms--additional-resources-mobile-heading" class="title is-3" hidden>Additional resources</h2>
+									<section id="right-rail-recommendations-mobile" data-bi-name="recommendations" hidden></section>
+								<section id="right-rail-training-mobile" data-bi-name="learning-resources-card" hidden></section>
+								<section id="right-rail-events-mobile" data-bi-name="events-card" hidden></section>
+								<section id="right-rail-qna-mobile" data-bi-name="qna-link-card" hidden></section>
+							</div>
+
+						<div class="border-top is-visible-interactive has-default-focus margin-top-sm ">
+
+
+
+	<footer id="footer-interactive" data-bi-name="footer" class="footer-layout">
+	<div class="display-flex is-full-height padding-right-lg-desktop">
+			<a
+				data-mscc-ic="false"
+				class="locale-selector-link button button-clear flex-shrink-0"
+				href="#"
+				data-bi-name="select-locale">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text"></span></a>
+		<div class="margin-inline-xs flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger"
+		aria-controls="theme-menu-interactive" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu-interactive" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="light">
+					<span class="theme-light margin-right-xxs">
+						<span
+							class="theme-selector-icon css-variable-support border display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Light					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="dark">
+					<span class="theme-dark margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden></li>
+				<li><a data-mscc-ic="false" href="/en-us/previous-versions/" data-bi-name="archivelink">Previous Versions</a></li>
+				<li><a data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">Blog</a></li>
+				<li><a data-mscc-ic="false" href="/en-us/contribute/" data-bi-name="contributorGuide">Contribute</a></li>
+					<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy</a></li>
+				<li><a data-mscc-ic="false" href="/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+				<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>&copy; Microsoft 2023</li>
+	</ul>
+</footer>
+						</div>
+
+					</div>
+
+						<div
+							id="ms--additional-resources"
+							class="right-container column is-4-desktop display-none display-block-desktop"
+							data-bi-name="pageactions"
+							role="complementary"
+							aria-label="Additional resources"
+						>
+							<div id="affixed-right-container" class="margin-top-sm-tablet" data-bi-name="right-column">
+								<h2 id="ms--additional-resources-heading" class="title is-6 margin-top-md" hidden>Additional resources</h2>
+								<section id="right-rail-events" data-bi-name="events-card" hidden></section>
+								<section id="right-rail-training" data-bi-name="learning-resources-card" hidden></section>
+								<section id="right-rail-recommendations" data-bi-name="recommendations" hidden></section>
+								<nav id="side-doc-outline" class="doc-outline" data-bi-name="intopic toc" role="navigation" aria-label="In this article">
+									<h3>In this article</h3>
+								</nav>
+								<section id="right-rail-qna" class="margin-top-xxs" data-bi-name="qna-link-card" hidden></section>
+							</div>
+						</div>
+
+				</div>
+				<!--end of div.columns -->
+
+			</section>
+			<!--end of .primary-holder -->
+
+			<!-- interactive container -->
+			<aside id="interactive-container" class="interactive-container is-visible-interactive column has-body-background-dark ">
+			</aside>
+			<!-- end of interactive container -->
+		</div>
+
+	</div>
+	<!--end of .mainContainer -->
+
+	<section class="border-top has-default-focus is-hidden-interactive margin-top-sm ">
+
+
+
+	<footer id="footer" data-bi-name="footer" class="footer-layout uhf-container has-padding" role="contentinfo">
+	<div class="display-flex is-full-height padding-right-lg-desktop">
+			<a
+				data-mscc-ic="false"
+				class="locale-selector-link button button-clear flex-shrink-0"
+				href="#"
+				data-bi-name="select-locale">
+					<span class="icon" aria-hidden="true">
+						<span class="docon docon-world"></span>
+					</span>
+					<span class="local-selector-link-text"></span></a>
+		<div class="margin-inline-xs flex-shrink-0">
+<div class="dropdown has-caret-up">
+	<button class="dropdown-trigger button button-clear button-sm has-inner-focus theme-dropdown-trigger"
+		aria-controls="theme-menu" aria-expanded="false" title="Theme" data-bi-name="theme">
+		<span class="icon">
+			<span class="docon docon-sun" aria-hidden="true"></span>
+		</span>
+		<span>Theme</span>
+	</button>
+	<div class="dropdown-menu" id="theme-menu" role="menu">
+		<ul class="theme-selector padding-xxs" role="none">
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="light">
+					<span class="theme-light margin-right-xxs">
+						<span
+							class="theme-selector-icon css-variable-support border display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Light					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="dark">
+					<span class="theme-dark margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+Dark					</span>
+				</button>
+			</li>
+			<li class="theme display-block" role="menuitem">
+				<button class="button button-clear button-sm theme-control button-block justify-content-flex-start"
+					data-theme-to="high-contrast">
+					<span class="theme-high-contrast margin-right-xxs">
+						<span
+							class="border theme-selector-icon css-variable-support display-inline-block has-body-background"
+							aria-hidden="true">
+							<svg class="svg" xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 22 14">
+								<rect width="22" height="14" class="has-fill-body-background" />
+								<rect x="5" y="5" width="12" height="4" class="has-fill-secondary" />
+								<rect x="5" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="8" y="2" width="2" height="1" class="has-fill-secondary" />
+								<rect x="11" y="2" width="3" height="1" class="has-fill-secondary" />
+								<rect x="1" y="1" width="2" height="2" class="has-fill-secondary" />
+								<rect x="5" y="10" width="7" height="2" rx="0.3" class="has-fill-primary" />
+								<rect x="19" y="1" width="2" height="2" rx="1" class="has-fill-secondary" />
+							</svg>
+						</span>
+					</span>
+					<span>
+High contrast					</span>
+				</button>
+			</li>
+		</ul>
+	</div>
+</div>
+		</div>
+	</div>
+	<ul class="links" data-bi-name="footerlinks">
+		<li class="manage-cookies-holder" hidden></li>
+				<li><a data-mscc-ic="false" href="/en-us/previous-versions/" data-bi-name="archivelink">Previous Versions</a></li>
+				<li><a data-mscc-ic="false" href="https://techcommunity.microsoft.com/t5/microsoft-learn-blog/bg-p/MicrosoftLearnBlog" data-bi-name="bloglink">Blog</a></li>
+				<li><a data-mscc-ic="false" href="/en-us/contribute/" data-bi-name="contributorGuide">Contribute</a></li>
+					<li><a data-mscc-ic="false" href="https://go.microsoft.com/fwlink/?LinkId=521839" data-bi-name="privacy">Privacy</a></li>
+				<li><a data-mscc-ic="false" href="/en-us/legal/termsofuse" data-bi-name="termsofuse">Terms of Use</a></li>
+				<li><a data-mscc-ic="false" href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" data-bi-name="trademarks">Trademarks</a></li>
+		<li>&copy; Microsoft 2023</li>
+	</ul>
+</footer>
+	</section>
+
+	<div id="action-panel" role="region" aria-label="Action Panel" class="action-panel has-default-focus" tabindex="-1"></div>
+</body>
+</html>
